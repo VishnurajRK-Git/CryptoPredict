@@ -14,7 +14,7 @@ def generate_rank(coin_map, days, today):
 
     for key in coin_map:
         print(key)
-        time.sleep(10)
+        time.sleep(15)
         df = fetch_data_from_api(coin_map[key], days)
         #ML_model_choice = "LSTM"
         current_price = df["price"].iloc[-1]
